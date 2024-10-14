@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// valid is optional and defaults to "true"
 func NullTime(value time.Time, valid ...bool) sql.NullTime {
 	isValid := true
 

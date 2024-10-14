@@ -2,6 +2,7 @@ package sqhelp
 
 import "database/sql"
 
+// valid is optional and defaults to "true"
 func NullFloat64(value float64, valid ...bool) sql.NullFloat64 {
 	isValid := true
 

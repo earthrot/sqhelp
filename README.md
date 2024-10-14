@@ -13,6 +13,9 @@ NullInt16(value int16, valid ...bool) sql.NullInt16
 NullInt32(value int32, valid ...bool) sql.NullInt32
 NullInt64(value int64, valid ...bool) sql.NullInt64
 NullFloat64(value float64, valid ...bool) sql.NullFloat64
+NullByte(value byte, valid ...bool) sql.NullByte
+NullBool(value bool, valid ...bool) sql.NullBool
+Null(value any, valid ...bool) sql.Null
 ```
 
 They all share the same parameters: the first is the value, and the second wether it is valid or not. This second parameter is optional and defaults to `true`.
